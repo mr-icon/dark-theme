@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="_header">
+        <img src="image/icon-instagram.svg" id="logo">
+        <div class="link-box">
+            <ul class="links">
+                <li <a href="#">Home</a></li>
+                <li <a href="#">About</a></li>
+                <li <a href="#">Contact</a></li>
+                <li <a href="#">Blog</a></li>
+                <li <a href="#">Careers</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="wrapper">
+            <div class="wrap-img">
+                <img src="image/image-computer.png" alt="computer" class="img-1">
+            </div>
+            <div class="content-wrapper">
+
+                    <h4 class="h4-1">Quick Search</h4>
+                    <p class="p-1">Easily search your snippets by content,<br>category, web address, application, and more. </p> 
+                
+                    <h4 class="h4-2">iCloud Sync</h4>
+                    <p class="p-2">Instantly saves and sync snippets across all<br>your devices. </p> 
+               
+                    <h4 class="h4-3">Complete History</h4>
+                    <p class="p-3">Retrieve any snippets from the first moment<br>you started using the app.</p>
+                
+            </div>
+        </div>
+    </section>
+    <script>
+        var logo = document.getElementById("logo");
+
+        logo.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                logo.src = "image/icon-twitter.svg";
+            }else{
+                logo.src = "image/icon-instagram.svg"
+            }
+        }
+    </script>
+</body>
+</html>
