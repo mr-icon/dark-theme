@@ -8,7 +8,7 @@ body{
 }
 
 :root{
-    --primary-color: #3f4b88
+    --primary-color: #fff;
     --secondary-color: #000106;
 }
 .dark-theme{
